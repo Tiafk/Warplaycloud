@@ -1,0 +1,128 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  .container-title {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 154px;
+    .top_title {
+      display: flex;
+      align-items: center;
+      .top_line {
+        width: 50px;
+        height: 1px;
+        background-color: #57D6FF;
+        border: 0;
+        margin-right: 30px;
+      }
+      .text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+        color: #57D6FF;
+      }
+    }
+    .title {
+      font-family: 'Aire Exterior', sans-serif;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 39px;
+      color: #fff;
+      margin-top: 17px;
+      margin-bottom: 60px;
+      margin-left: 2px;
+    }
+  }
+  .cart {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    .modul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 543px;
+      justify-content: center;
+      align-items: center;
+      background: #1F2631;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      margin-right: 10px;
+      transition: .7s ease;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background: #00C5FF;
+        box-shadow: 0px -4px 50px #00C5FF;
+        .container {
+          .title, .money {
+            color: rgba(20, 28, 36, 1);
+            transition: .2s ease;
+          }
+          .text {
+            color: rgba(0, 0, 0, 1);
+            transition: .2s ease;
+          }
+          .select {
+            background: #141C24;
+            color: #F1F8FF;
+            transition: .2s ease;
+          }
+        }
+      }
+      .container {
+        display: flex;
+        max-width: 321px;
+        .title {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 42px;
+          color: #FFFFFF;
+        }
+        .money {
+          font-size: 24px;
+          font-weight: 500;
+          color: #fff;
+          margin-top: 15px;
+        }
+        .text {
+          font-weight: 300;
+          font-size: 21.33px;
+          line-height: 150%;
+          color: rgba(171, 171, 171, 1);
+          margin-top: 21px;
+          padding-bottom: 72px;
+        }
+        .last {
+          padding-bottom: 103px;
+        }
+        .select {
+          font-family: 'Aire Exterior';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 70px;
+          background: #00C5FF;
+          border-radius: 5px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 180%;
+          color: #141C24;
+          border: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .line {
+    display: flex;
+    align-self: center;
+    min-width: 582px;
+    height: 1px;
+    background: #00C5FF;
+    margin-top: 90px;
+  }
+}

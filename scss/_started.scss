@@ -1,0 +1,118 @@
+.started {
+  display: flex;
+  align-self: end;
+  margin-top: 52px;
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    .top_title {
+      display: flex;
+      align-items: center;
+      .title_line {
+        width: 50px;
+        height: 1px;
+        background-color: #57D6FF;
+        border: 0;
+        margin-right: 34px;
+      }
+      .text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+        color: #57D6FF;
+      }
+    }
+    .title {
+      font-family: 'Aire Exterior', sans-serif;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 39px;
+      color: #fff;
+      margin-top: 17px;
+      margin-bottom: 60px;
+      margin-left: 1px;
+      max-width: 320px;
+    }
+    .text_container {
+      display: flex;
+      flex-direction: column;
+      
+      .text {
+        font-weight: 300;
+        font-size: 21.33px;
+        line-height: 150%;
+        color: #858585;
+      }
+      .line {
+        width: 271px;
+        height: 1px;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 27px;
+        margin-bottom: 22px;
+      }
+      .download {
+        display: flex;
+        min-width: 153px;
+        max-width: 80px;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #00C5FF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #00C5FF;
+        padding-bottom: 6px;
+        margin-top: 74px;
+        cursor: pointer;
+      }
+    }
+    .pichers {
+      display: none;
+    }
+  }
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 68px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    .top_title {
+      display: flex;
+      align-items: center;
+      .title_line {
+        width: 50px;
+        height: 1px;
+        background-color: #57D6FF;
+        border: 0;
+        margin-right: 30px;
+      }
+      .text {
+        align-self: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+        color: #57D6FF;
+      }
+    }
+    .title {
+      font-family: 'Aire Exterior', sans-serif;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 39px;
+      color: #fff;
+      margin-top: 17px;
+      margin-bottom: 60px;
+      margin-left: 1px;
+    }
+  }
+  img {
+    align-self: center;
+    margin-bottom: 87px;
+  }
+}
