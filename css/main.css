@@ -97,7 +97,7 @@ body .main .active {
   justify-content: center;
 }
 .slider .container .stalker {
-  background-image: url(/img/slider/space.png);
+  background-image: url(../img/slider/space.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 1324px;
@@ -130,8 +130,9 @@ body .main .active {
 }
 .slider .container .slid .slide_header {
   display: flex;
+  align-self: center;
+  min-width: 90%;
   margin-top: 44px;
-  margin-left: 75px;
   justify-content: space-between;
 }
 .slider .container .slid .slide_header .logo {
@@ -145,7 +146,6 @@ body .main .active {
   height: 18px;
   border: 0;
   background-color: transparent;
-  margin-right: 45px;
   cursor: pointer;
 }
 .slider .container .slid .slide_header .burger_menu .burger_line {
@@ -797,18 +797,20 @@ body .main .active {
 
 .visible {
   display: flex;
+  transition: 0.3s;
 }
 
 .burger_nav {
   display: none;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   flex-direction: column;
   background-color: #141C24;
   z-index: 800;
-  transition: 1s;
+  transition: 0.3s;
   overflow: auto;
 }
 .burger_nav .burger_logo {
@@ -855,7 +857,7 @@ body .main .active {
 .burger_nav .bottom .contact_icon img:last-child {
   margin-right: 0;
 }
-.burger_nav .bottom .line {
+.burger_nav .bottom .burger_bot {
   display: flex;
   align-self: center;
   width: 300px;
@@ -901,7 +903,7 @@ body .main .active {
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 447px;
+  max-width: 447px;
 }
 .registration .container .content .title {
   display: flex;
@@ -915,11 +917,11 @@ body .main .active {
 }
 .registration .container .content .title .to_come {
   position: relative;
-  cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
 }
 .registration .container .content .title .active {
   color: #fff;
+  cursor: pointer;
 }
 .registration .container .content .revers {
   flex-direction: row-reverse;
@@ -930,12 +932,14 @@ body .main .active {
   align-self: center;
 }
 .registration .container .content .list input {
+  display: flex;
+  align-self: center;
+  min-width: 330px;
   font-family: "Aire Exterior";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  min-width: 382px;
   padding: 25px 24px;
   border-radius: 5px;
   border: 0;
@@ -1033,35 +1037,35 @@ body .main .active {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.woff"), url("/fonts/Roboto-Bold.ttf"), url("/fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.woff"), url("../fonts/Roboto-Bold.ttf"), url("../fonts/Roboto-Bold.eot");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Medium.woff"), url("/fonts/Roboto-Medium.ttf"), url("/fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.woff"), url("../fonts/Roboto-Medium.ttf"), url("../fonts/Roboto-Medium.eot");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.woff"), url("/fonts/Roboto-Regular.ttf"), url("/fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.woff"), url("../fonts/Roboto-Regular.ttf"), url("../fonts/Roboto-Regular.eot");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Light.woff"), url("/fonts/Roboto-Light.ttf"), url("/fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.woff"), url("../fonts/Roboto-Light.ttf"), url("../fonts/Roboto-Light.eot");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Aire Exterior";
-  src: url("/fonts/ofont.ru_Aire Exterior.ttf");
+  src: url("../fonts/ofont.ru_Aire Exterior.ttf");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -1130,6 +1134,12 @@ body .main .active {
   .started .text_container {
     align-items: center;
     text-align: center;
+  }
+  .started .pic {
+    align-self: end;
+  }
+  .started .pic img {
+    width: 100%;
   }
 }
 @media (max-width: 1060px) {
@@ -1352,5 +1362,22 @@ body .main .active {
   .system .container .content .icon img {
     justify-self: center;
     margin-right: 0;
+  }
+  .burger_nav .navigation {
+    min-width: 80%;
+  }
+  .burger_nav .bottom .burger_bot {
+    width: 80%;
+  }
+}
+@media (max-width: 510px) {
+  .registration .container {
+    flex-direction: column;
+  }
+  .registration .container .arrow {
+    width: 100%;
+  }
+  .registration .container .content .agreement {
+    padding: 0 5px;
   }
 }
