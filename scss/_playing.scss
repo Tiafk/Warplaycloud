@@ -1,0 +1,91 @@
+.playing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .left-line {
+    height: 100%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0;
+    z-index: 5;
+  }
+  .container-title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 87px;
+    .top_title {
+      display: flex;
+      align-items: center;
+      .title_line {
+        width: 50px;
+        height: 1px;
+        background-color: #57D6FF;
+        border: 0;
+        margin-right: 30px;
+      }
+      .text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+        color: #57D6FF;
+      }
+    }
+    .title {
+      font-family: 'Aire Exterior', sans-serif;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 39px;
+      color: #fff;
+      margin-top: 17px;
+      margin-bottom: 60px;
+      margin-left: 2px;
+    }
+  }
+  .modules {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    .container {
+      flex-direction: row;
+      align-items: center;
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        .text {
+          display: flex;
+          text-align: center;
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 150%;
+          color: #F1F1F1;
+          padding-top: 12px;
+        }
+      }
+      .line {
+        background: #50AFCD;
+        width: 73px;
+        height: 1px;
+        margin-bottom: 45px;
+      }
+    }
+  }
+  .start {
+    display: flex;
+    max-width: 69px;
+    align-self: center;
+    background: transparent;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;    
+    color: #00C5FF;
+    border-bottom: 1px solid #00C5FF;
+    padding-bottom: 3px;
+    margin-top: 90px;
+    cursor: pointer;
+  }
+}

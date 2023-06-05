@@ -1,0 +1,16 @@
+.play_block {
+  display: flex;
+  min-width: 1327px;
+  justify-content: space-between;
+  align-self: center;
+  .bg_line {
+    height: 2182px;
+    width: 1px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

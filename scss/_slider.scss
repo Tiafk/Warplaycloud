@@ -1,0 +1,125 @@
+.slider {
+  display: flex;
+  position: relative;
+  height: 900px;
+  justify-content: center;
+  padding-top: 26px;
+  .bg_line_up, .bg_line_down{
+    display: flex;
+    position: absolute;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    .stalker {
+      background-image: url(../img/slider/space.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1324px;
+      height: 758px;
+      border: 0.5px solid #57D6FF;
+      box-shadow: 0px 0px 41px 0px #57d6ff;
+      border-radius: 15px;
+      margin: 0 56px;
+      .bg_line_up {
+        height: 77px;
+        width: 1px;
+        background-color: #fff;
+        left: 50%;
+        top: 124px;
+        z-index: 10;
+      }
+      .bg_line_down {
+        height: 132px;
+        width: 1px;
+        background-color: #fff;
+        left: 50%;
+        top: 734px;
+        z-index: 10;
+      }
+    }
+    .slid {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .slide_header {
+        display: flex;
+        align-self: center;
+        min-width: 90%;
+        margin-top: 44px;
+        justify-content: space-between;
+        .logo {
+          display: flex;
+          align-self: start;
+        }
+        .burger_menu {
+          display: flex;
+          flex-direction: column;
+          width: 46px;
+          height: 18px;
+          border: 0;
+          background-color: transparent;
+          cursor: pointer;
+          .burger_line {
+            width: 45px;
+            height: 5px;
+            border: 0;
+            background-color: #fff;
+            margin-bottom: 8px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+        .filling {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 302px;
+          color: #fff;
+          .sub_title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 11px;
+          }
+          .title {
+            font-family: 'Aire Exterior';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+          }
+          .btn {
+            display: flex;
+            font-family: 'Aire Exterior', sans-serif;
+            min-width: 251px;
+            height: 61px;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            background:linear-gradient(-135deg, transparent 15px, #fff 0);
+            border: 0;
+            margin-top: 99px;
+            cursor: pointer;
+          }
+        }
+      .line {
+        display: none;
+        position: absolute;
+        height: 606px;
+        width: 0;
+        top: 124px;
+        right: 67px;
+      }
+    }
+  }
+}
