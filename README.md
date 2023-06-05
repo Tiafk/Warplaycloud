@@ -1,2 +1,2 @@
 # Warplaycloud
-https://tiafk.github.io/Warplaycloud/
+Простая верста на Flex + адаптив
